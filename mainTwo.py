@@ -1,9 +1,39 @@
-word = "Arsenal, manchester, fulham"
-land = word.split(", ")
-print(land)
-for index in range(len(land)):
-    land[index] = land[index].capitalize()
-print(land)
+# Кортежи (tuple)
+data = (100, 900, 100, 500, True, "World")
+print(data.count(100))
+print(len(data))
+print(data.index(900))
+print(data.index(500))
+print(data[2:6])
+numbers = [100, 900, 100, 500, True, "World"]
+print(numbers)
+newTupleOne = tuple(numbers)
+print(newTupleOne)
+word = "Europe"
+newTupleTwo = tuple(word)
+print(newTupleTwo)
+# lis = [100, 200, 34, 45, 10, 70]
+# print(lis[2:])
+# print(lis[2:6])
+# print(lis[::])
+# print(lis[::-1])
+# print(lis[::-2])
+# print(len(lis))
+
+
+# word = "Arsenal, manchester, fulham"
+# land = word.split(", ")
+# print(land)
+# for index in range(len(land)):
+#     land[index] = land[index].capitalize()
+# print(land)
+#
+# result = (", ".join(land))
+# print(result)
+#
+# print(result[0:20])
+# print(result[19:20])
+# print(result[21:])
 # n = int(input("Enter length of list : "))
 # userList = []
 # index = 0
