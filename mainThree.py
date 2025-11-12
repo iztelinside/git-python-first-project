@@ -1,3 +1,5 @@
+
+
 number = 0
 while number == 0:
     try:
@@ -7,12 +9,12 @@ while number == 0:
     except ValueError:
         print("That's not a number")
 
-# data = input("Enter your text : ")
-# print(data)
-# file = open("data/text.txt","w")
-# print(file.read())
-# for line in file:
-#     print(line, end="")
+data = input("Enter your text : ")
+print(data)
+file = open("data/text.txt","w")
+print(file.read())
+for line in file:
+    print(line, end="")
 
 
 
