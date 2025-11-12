@@ -1,11 +1,48 @@
-found = None
-for i in "Hello":
-    if i == "l":
-        found = True
-        break
-else:
-    found = False
-print(found)
+word = "Arsenal, manchester, fulham"
+land = word.split(", ")
+print(land)
+for index in range(len(land)):
+    land[index] = land[index].capitalize()
+print(land)
+# n = int(input("Enter length of list : "))
+# userList = []
+# index = 0
+# while index < n:
+#     string = "Enter element #" + str(index + 1)+ ": "
+#     userList.append(input(string))
+#     index += 1
+# print(userList)
+
+# listNumbers = [100, 600, 400, 300, 200, True]
+#
+# for element in listNumbers:
+#     print(element)
+# listNumbers.pop(1)
+# listNumbers.sort()
+# listNumbers.remove(600)
+# listNumbers.remove(True)
+# listNumbers.append(False)
+# file = [200, 900, 800]
+# listNumbers.extend(file)
+# print(listNumbers)
+# listNumbers.insert(1, "Hello")
+# print(listNumbers)
+# print(type(listNumbers[5]))
+# print(max(listNumbers))
+# print(min(listNumbers))
+# print(len(listNumbers))
+# print(listNumbers[0])
+# for number in listNumbers:
+#     print(number)
+
+# found = None
+# for i in "Hello World!":
+#     if i == "w":
+#         found = True
+#         break
+# else:
+#     found = False
+# print(found)
 
 # index = 10
 # while index <= 20:
