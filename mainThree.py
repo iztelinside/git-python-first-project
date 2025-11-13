@@ -1,20 +1,37 @@
-
-
-number = 0
-while number == 0:
-    try:
-        number = int(input("Enter a number: "))
-        number += 5
-        print(number)
-    except ValueError:
-        print("That's not a number")
-
+try:
+    with open("text.txt", "r", encoding="utf-8") as file:
+        file.read()
+except FileNotFoundError:
+    print("File not found.")
 data = input("Enter your text : ")
-print(data)
-file = open("data/text.txt","w")
-print(file.read())
-for line in file:
-    print(line, end="")
+
+file = open("text.txt","w")
+file.close()
+
+# file.close()
+# print(file.read())
+# for line in file:
+#     print(line, end="")
+
+# n = int(input("Enter length of list : "))
+# userList = []
+# index = 0
+# while index < n:
+#     string = "Enter element #" + str(index + 1)+ ": "
+#     userList.append(int(input(string)))
+#     index += 1
+# print(userList)
+#
+# number = 0
+# while number == 0:
+#     try:
+#         number = int(input("Enter a number: "))
+#         number += 5
+#         print(number)
+#     except ValueError:
+#         print("That's not a number")
+
+
 
 
 
